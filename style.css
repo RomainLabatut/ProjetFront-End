@@ -1,0 +1,14 @@
+.BarreNav{
+    background-color: #00857c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.formulaire{
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
