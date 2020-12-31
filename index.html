@@ -5,248 +5,262 @@
   <meta charset="UTF-8">
   <title>GSB</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Arapey&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
   <!-- BARRE DE NAVIGATION -->
-  <nav class="BarreNav">
+
+  <div class="image-nav">
+    <nav class="BarreNav">
+      <div>
+        <img src="GSB LOGO.png" alt="">
+      </div>
+      <div class="lien">
+        <a class="lien1" href="#"> <strong> Actualité </strong></a>
+        <a class="lien1" href="#"> <strong> Votre Santé </strong></a>
+        <a class="lien1" href="#"> <strong> A Propos de GSB </strong></a>
+      </div>
+    </nav>
+
+    <!-- FORMULAIRE -->
+
+    <div class="header">
+      <div class="formulaire">
+        <form class="form">
+          <h1>Formulaire de recherche </h1>
+          <div>
+            <label for="inputFirstName" class="form-label">Prénom</label>
+            <input type="text" class="form-control" id="inputText">
+          </div>
+          <div>
+            <label for="inputLastName" class="form-label">Nom</label>
+            <input type="text" class="form-control" id="inputText">
+          </div>
+          <div>
+            <label for="inputSpeciality" class="form-label">Spécialité</label>
+            <input type="text" class="form-control" id="inputSpeciality" placeholder="Dentiste, Chirurgien, Pod..">
+          </div>
+
+          <div>
+            <label for="inputCity" class="form-label">Ville</label>
+            <select id="inputCity" class="form-control">
+              <option selected>Marseille</option>
+              <option>Paris</option>
+              <option>Lyon</option>
+            </select>
+          </div>
+          <div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                <strong> Praticien déjà visité ? </strong>
+              </label>
+            </div>
+          </div>
+          <div>
+            <button id="#recherche" type="submit" class="bouton">Rechercher</button>
+          </div>
+        </form>
+        <lottie-player class="lottie" src="https://assets3.lottiefiles.com/packages/lf20_B9OnGv.json"
+          background="transparent" speed="0.7" style="width: 150px; height: 150px;" loop autoplay></lottie-player>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Chargement -->
+
+  <div class="slogan">
     <div>
-      <img src="GSB LOGO.png" alt="">
+      <img src="docteuranimation.gif" alt="">
     </div>
-    <div class="lien">
-      <a class="lien1" href="#"> Actualité</a>
-      <a class="lien1" href="#"> Votre Santé</a>
-      <a class="lien1" href="#"> A propos de GSB</a>
+    <div class="texte">
+      <h2> Nos praticiens, vocations de demain</h2>
+      <br>
+      <p class="intro">Aujourd'hui le monde de la santé vit un tournant sans précédent</p>
+      <p class="intro">C'est pourquoi GSB vous accompagne et met en place </p>
+      <p class="intro">des solutions de santé pour les professionnels et les particuliers</p>
     </div>
-  </nav>
-
-  <!-- FORMULAIRE -->
-
-<div class="header">
-  <div class="formulaire">
-    <form class="form">
-      <h1>Formulaire de recherche </h1>
-      <div>
-        <label for="inputFirstName" class="form-label">Prénom</label>
-        <input type="text" class="form-control" id="inputText">
-      </div>
-      <div>
-        <label for="inputLastName" class="form-label">Nom</label>
-        <input type="text" class="form-control" id="inputText">
-      </div>
-      <div>
-        <label for="inputSpeciality" class="form-label">Spécialité</label>
-        <input type="text" class="form-control" id="inputSpeciality" placeholder="Dentiste, Chirurgien, Podologue...">
-      </div>
-
-      <div>
-        <label for="inputCity" class="form-label">Ville</label>
-        <select id="inputCity" class="form-control">
-          <option selected>Marseille</option>
-          <option>Paris</option>
-          <option>Lyon</option>
-        </select>
-      </div>
-      <div>
-        <div>
-          <label class="form-check" for="gridCheck"> Déjà visité </label>
-          <input class="form-check" type="checkbox" id="gridCheck">
-        </div>
-      </div>
-      <div>
-        <button type="submit" class="bouton">Rechercher</button>
-      </div>
-    </form>
   </div>
 
-
-  <div class="intro">
-    <p>A la recherche d'un praticien ? GSB vous offre la possibilité</p>
-    <p>de faire une recherche par ville et par spécialité</p>
-    <img class="animer" src="docteuranimation.gif" alt="">
-  </div>
-</div>
 
   <!-- CARD -->
-  <div class="praticien1">
+
+  <h2> Votre recherche de praticiens</h2>
+  <br>
+  <div class="praticien1" id="recherche">
     <div class="card" style="width: 18rem;">
       <img src="PraticienF.jfif" class="card-img-top" alt="...">
       <div class="card-body">
-        <h3 class="card-title">Henri Dupont</h3>
-        <p class="card-text">Présentation</p>
+        <h3 class="card-title">Stéphanie Martin</h3>
+        <p class="card-text">6 ans d'expérience</p>
       </div>
       <ul class="list-group list-group-flush">
-        <li class="list-group-item">Cras justo odio</li>
-        <li class="list-group-item">Dapibus ac facilisis in</li>
-        <li class="list-group-item">Vestibulum at eros</li>
+        <li class="list-group-item">Marseille</li>
+        <li class="list-group-item">Podologue</li>
+        <li class="list-group-item">Non Visité</li>
       </ul>
       <div class="card-body">
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
+        <a href="#" class="card-link">Voir la fiche détaillée</a>
       </div>
     </div>
 
-      <div class="card" style="width: 18rem;">
-        <img src="PraticienF.jfif" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h3 class="card-title">Anais Belba</h3>
-          <p class="card-text">Présentation</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Vestibulum at eros</li>
-        </ul>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
+    <div class="card" style="width: 18rem;">
+      <img src="PraticienF.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title">Anais Belba</h3>
+        <p class="card-text">10 ans d'expérience</p>
       </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Marseille</li>
+        <li class="list-group-item">Dentiste</li>
+        <li class="list-group-item">Visité</li>
+      </ul>
+      <div class="card-body">
+        <a href="#" class="card-link">Voir la fiche détaillée</a>
+      </div>
+    </div>
 
-      <div class="card" style="width: 18rem;">
-        <img src="PraticienF.jfif" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h3 class="card-title">Henri Dupont</h3>
-          <p class="card-text">Présentation</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Vestibulum at eros</li>
-        </ul>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
+    <div class="card" style="width: 18rem;">
+      <img src="PraticienH.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title">Henri Dupont</h3>
+        <p class="card-text">7 ans d'expérience</p>
       </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Lyon</li>
+        <li class="list-group-item">Podologue</li>
+        <li class="list-group-item">Visité</li>
+      </ul>
+      <div class="card-body">
+        <a href="#" class="card-link">Voir la fiche détaillée</a>
+      </div>
+    </div>
   </div>
-
-
-
-
-
 
   <div class="praticien2">
     <div class="card" style="width: 18rem;">
       <img src="PraticienF.jfif" class="card-img-top" alt="...">
       <div class="card-body">
         <h3 class="card-title">Julia Leveaux</h3>
-        <p class="card-text">Présentation</p>
+        <p class="card-text">4 ans d'expérience</p>
       </div>
       <ul class="list-group list-group-flush">
-        <li class="list-group-item">Cras justo odio</li>
-        <li class="list-group-item">Dapibus ac facilisis in</li>
-        <li class="list-group-item">Vestibulum at eros</li>
+        <li class="list-group-item">Paris</li>
+        <li class="list-group-item">Podologue</li>
+        <li class="list-group-item">Non Visité</li>
       </ul>
       <div class="card-body">
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
+        <a href="#" class="card-link">Voir la fiche détaillée</a>
       </div>
     </div>
 
-      <div class="card" style="width: 18rem;">
-        <img src="PraticienF.jfif" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h3 class="card-title">Henri Dupont</h3>
-          <p class="card-text">Présentation</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Vestibulum at eros</li>
-        </ul>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
+    <div class="card" style="width: 18rem;">
+      <img src="PraticienH.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title">Matthieu Pellegrin</h3>
+        <p class="card-text">11 ans d'expérience</p>
       </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Lyon</li>
+        <li class="list-group-item">Chirurgien</li>
+        <li class="list-group-item">Non Visité</li>
+      </ul>
+      <div class="card-body">
+        <a href="#" class="card-link">Voir la fiche détaillée</a>
+      </div>
+    </div>
 
-      <div class="card" style="width: 18rem;">
-        <img src="PraticienF.jfif" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h3 class="card-title">Christine Allard</h3>
-          <p class="card-text">Présentation</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Vestibulum at eros</li>
-        </ul>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
+    <div class="card" style="width: 18rem;">
+      <img src="PraticienF.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title">Christine Allard</h3>
+        <p class="card-text">3 ans d'expérience</p>
       </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Paris</li>
+        <li class="list-group-item">Dentiste</li>
+        <li class="list-group-item">Visité</li>
+      </ul>
+      <div class="card-body">
+        <a href="#" class="card-link">Voir la fiche détaillée</a>
+      </div>
+    </div>
   </div>
 
 
   <div class="praticien3">
     <div class="card" style="width: 18rem;">
-      <img src="PraticienF.jfif" class="card-img-top" alt="...">
+      <img src="PraticienH.jfif" class="card-img-top" alt="...">
       <div class="card-body">
-        <h3 class="card-title">Henri Dupont</h3>
-        <p class="card-text">Présentation</p>
+        <h3 class="card-title">Léo Duforest</h3>
+        <p class="card-text">9 ans d'expérience</p>
       </div>
       <ul class="list-group list-group-flush">
-        <li class="list-group-item">Cras justo odio</li>
-        <li class="list-group-item">Dapibus ac facilisis in</li>
-        <li class="list-group-item">Vestibulum at eros</li>
+        <li class="list-group-item">Paris</li>
+        <li class="list-group-item">Chirurgien</li>
+        <li class="list-group-item">Visité</li>
       </ul>
       <div class="card-body">
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
+        <a href="#" class="card-link">Voir la fiche détaillée</a>
       </div>
     </div>
 
-      <div class="card" style="width: 18rem;">
-        <img src="PraticienF.jfif" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h3 class="card-title">Hélène Dubois</h3>
-          <p class="card-text">Présentation</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Vestibulum at eros</li>
-        </ul>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
+    <div class="card" style="width: 18rem;">
+      <img src="PraticienF.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title">Hélène Dubois</h3>
+        <p class="card-text">8 ans d'expérience</p>
       </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Marseille</li>
+        <li class="list-group-item">Chirurgien</li>
+        <li class="list-group-item">Non Visité</li>
+      </ul>
+      <div class="card-body">
+        <a href="#" class="card-link">Voir la fiche détaillée</a>
+      </div>
+    </div>
 
-      <div class="card" style="width: 18rem;">
-        <img src="PraticienF.jfif" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h3 class="card-title">Bernard Cohen</h3>
-          <p class="card-text">Présentation</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Vestibulum at eros</li>
-        </ul>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
+    <div class="card" style="width: 18rem;">
+      <img src="PraticienH.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title">Bernard Cohen</h3>
+        <p class="card-text">4 ans d'expérience</p>
       </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Lyon</li>
+        <li class="list-group-item">Dentiste</li>
+        <li class="list-group-item">Visité</li>
+      </ul>
+      <div class="card-body">
+        <a href="#" class="card-link">Voir la fiche détaillée</a>
+      </div>
+    </div>
   </div>
 
+<!-- FOOTER -->
 
-<footer>
-  <div>
-    <h1>FOOTER</h1>
+  <footer>
+    <div>
+    <div class="footer">
+      <h4>GSB</h4>
+    </div>
+    <div >
+      <ul class="lien-footer">
+       <li class="mention"> <a class="mention" href="#"> <strong> Mention Légales </strong></a></li>
+       <li class="mention"> <a class="mention" href="#"> <strong> RGPD </strong></a></li>
+       <li class="mention"> <a class="mention" href="#"> <strong> Cookies </strong></a></li>
+      </ul>
+    </div>
   </div>
-</footer>
-
-
-
-
-
-
-
-
+  </footer>
 
 </body>
 
