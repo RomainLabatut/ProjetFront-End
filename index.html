@@ -10,8 +10,7 @@
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Arapey&display=swap" rel="stylesheet">
-</head>
-
+  <link href="css/tent.min.css" rel="stylesheet">
 <body>
 
   <!-- BARRE DE NAVIGATION -->
@@ -71,7 +70,6 @@
           background="transparent" speed="0.7" style="width: 150px; height: 150px;" loop autoplay></lottie-player>
       </div>
     </div>
-
   </div>
 
   <!-- Chargement -->
@@ -83,9 +81,9 @@
     <div class="texte">
       <h2> Nos praticiens, vocations de demain</h2>
       <br>
-      <p class="intro">Aujourd'hui le monde de la santé vit un tournant sans précédent</p>
-      <p class="intro">C'est pourquoi GSB vous accompagne et met en place </p>
-      <p class="intro">des solutions de santé pour les professionnels et les particuliers</p>
+      <p class="intro grid__column grid__column--12 grid__column--#--sm ">Aujourd'hui le monde de la santé vit un tournant sans précédent</p>
+      <p class="intro grid__column grid__column--12 grid__column--#--sm ">C'est pourquoi GSB vous accompagne et met en place </p>
+      <p class="intro grid__column grid__column--12 grid__column--#--sm ">des solutions de santé pour les professionnels et les particuliers</p>
     </div>
   </div>
 
@@ -93,9 +91,11 @@
   <!-- CARD -->
 
   <h2> Votre recherche de praticiens</h2>
+
   <br>
-  <div class="praticien1" id="recherche">
-    <div class="card" style="width: 18rem;">
+
+  <div class="grid" id="recherche">
+    <div class="grid__column grid__column--12 grid__column--#--sm " style="border : solid 0.15rem rgb(165, 162, 162);">
       <img src="PraticienF.jfif" class="card-img-top" alt="...">
       <div class="card-body">
         <h3 class="card-title">Stéphanie Martin</h3>
@@ -111,7 +111,7 @@
       </div>
     </div>
 
-    <div class="card" style="width: 18rem;">
+    <div class="grid__column grid__column--12 grid__column--#--sm " style="border : solid 0.15rem black;">
       <img src="PraticienF.jfif" class="card-img-top" alt="...">
       <div class="card-body">
         <h3 class="card-title">Anais Belba</h3>
@@ -127,7 +127,7 @@
       </div>
     </div>
 
-    <div class="card" style="width: 18rem;">
+    <div class="grid__column grid__column--12 grid__column--#--sm " style="border : solid 0.15rem rgb(165, 162, 162);">
       <img src="PraticienH.jfif" class="card-img-top" alt="...">
       <div class="card-body">
         <h3 class="card-title">Henri Dupont</h3>
@@ -144,8 +144,8 @@
     </div>
   </div>
 
-  <div class="praticien2">
-    <div class="card" style="width: 18rem;">
+  <div class="grid">
+    <div class="grid__column grid__column--12 grid__column--#--sm" style="border : solid 0.15rem rgb(165, 162, 162);">
       <img src="PraticienF.jfif" class="card-img-top" alt="...">
       <div class="card-body">
         <h3 class="card-title">Julia Leveaux</h3>
@@ -161,7 +161,7 @@
       </div>
     </div>
 
-    <div class="card" style="width: 18rem;">
+    <div class="grid__column grid__column--12 grid__column--#--sm" style="border : solid 0.15rem black;">
       <img src="PraticienH.jfif" class="card-img-top" alt="...">
       <div class="card-body">
         <h3 class="card-title">Matthieu Pellegrin</h3>
@@ -177,7 +177,7 @@
       </div>
     </div>
 
-    <div class="card" style="width: 18rem;">
+    <div class="grid__column grid__column--12 grid__column--#--sm" style="border : solid 0.15rem  rgb(165, 162, 162);">
       <img src="PraticienF.jfif" class="card-img-top" alt="...">
       <div class="card-body">
         <h3 class="card-title">Christine Allard</h3>
@@ -195,8 +195,8 @@
   </div>
 
 
-  <div class="praticien3">
-    <div class="card" style="width: 18rem;">
+  <div class="grid">
+    <div class="grid__column grid__column--12 grid__column--#--sm" style="border : solid 0.15rem rgb(165, 162, 162);">
       <img src="PraticienH.jfif" class="card-img-top" alt="...">
       <div class="card-body">
         <h3 class="card-title">Léo Duforest</h3>
@@ -212,7 +212,7 @@
       </div>
     </div>
 
-    <div class="card" style="width: 18rem;">
+    <div class="grid__column grid__column--12 grid__column--#--sm" style="border : solid 0.15rem black;">
       <img src="PraticienF.jfif" class="card-img-top" alt="...">
       <div class="card-body">
         <h3 class="card-title">Hélène Dubois</h3>
@@ -228,7 +228,7 @@
       </div>
     </div>
 
-    <div class="card" style="width: 18rem;">
+    <div class="grid__column grid__column--12 grid__column--#--sm" style="border : solid 0.15rem rgb(165, 162, 162);">
       <img src="PraticienH.jfif" class="card-img-top" alt="...">
       <div class="card-body">
         <h3 class="card-title">Bernard Cohen</h3>
@@ -245,21 +245,21 @@
     </div>
   </div>
 
-<!-- FOOTER -->
+  <!-- FOOTER -->
 
   <footer>
     <div>
-    <div class="footer">
-      <h4>GSB</h4>
+      <div class="footer">
+        <h4>GSB</h4>
+      </div>
+      <div>
+        <ul class="lien-footer">
+          <li class="mention"> <a class="mention" href="#"> <strong> Mention Légales </strong></a></li>
+          <li class="mention"> <a class="mention" href="#"> <strong> RGPD </strong></a></li>
+          <li class="mention"> <a class="mention" href="#"> <strong> Cookies </strong></a></li>
+        </ul>
+      </div>
     </div>
-    <div >
-      <ul class="lien-footer">
-       <li class="mention"> <a class="mention" href="#"> <strong> Mention Légales </strong></a></li>
-       <li class="mention"> <a class="mention" href="#"> <strong> RGPD </strong></a></li>
-       <li class="mention"> <a class="mention" href="#"> <strong> Cookies </strong></a></li>
-      </ul>
-    </div>
-  </div>
   </footer>
 
 </body>
